@@ -1,16 +1,19 @@
 # pokemon_type_selector
 
-A new Flutter project.
+3명에서 4명이서 토너먼트로 포켓몬 대결을 할 때의 새로운 규칙입니다.
 
-## Getting Started
+누가 더 포켓몬 덱 메이킹을 잘하고, 누가 더 심리전을 잘 하는가... 그것이 저희가 겨뤄야할 이유였죠...
 
-This project is a starting point for a Flutter application.
+하지만 강한 600족 포켓몬들과 개사기 아이템들로 도배해서 덱을 짜오게 되면 진흙탕 싸움이 벌어집니다.
 
-A few resources to get you started if this is your first Flutter project:
+카운터의 카운터의 카운터... 결국엔 돌고 돌아 600족으로 귀결되는 이 싸움... 저희는 이런 싸움에 환멸을 느꼈습니다.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+그렇기에 저희는 서로에게 타입을 골라주기로 했습니다!!!!!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+그런데... 서로가 1배율인 타입을 말이죠...!
+
+서로가 서로에게 효과적이지도, 효과가 별로이지도 않은 그런 타입을 주는 것입니다.
+
+그리고 이 앱은 그것을 도와줍니다.
+
+개 쓸데없는 앱이지만 내수용으로 쓰려고 만듭니다.
