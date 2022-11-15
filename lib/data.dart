@@ -35,7 +35,7 @@ class Data {
     "Electric": "assets/icons/Electric_Type_Icon.png",
     "Grass": "assets/icons/Grass_Type_Icon.png",
     "Ice": "assets/icons/Ice_Type_Icon.png",
-    "Phychic": "assets/icons/Phychic_Type_Icon.png",
+    "Psychic": "assets/icons/Psychic_Type_Icon.png",
     "Dragon": "assets/icons/Dragon_Type_Icon.png",
     "Dark": "assets/icons/Dark_Type_Icon.png",
     "Fairy": "assets/icons/Fairy_Type_Icon.png"
@@ -48,8 +48,21 @@ class Data {
     [0, 0, -1, 0, 0, 0, -1, 0, 0, 0, 1, -2, 1, 1, 0, 0, 0, 0],
     [0, -1, 0, -2, 0, -1, 1, 0, 0, 0, 0, 1, -1, 1, 0, 0, 0, 0],
     [0, -1, 0, -1, 1, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0],
-    [],
-    [],
-    []
+    [-1, 1, -1, 1, -1, 0, 0, 0, 1, -1, 1, 0, 1, 0, 0, 0, 0, 0],
+    [-2, -2, -1, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    [-1, 1, -2, 1, -1, -1, -1, 0, -1, 1, 0, 0, -1, -1, -1, -1, 0, -1],
+    [0, 0, 0, 1, 0, -1, 1, 0, -1, -1, 1, 0, -1, -1, 0, 0, 0, -1],
+    [0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 1, 1, -1, 0, 0, 0, 0],
+    [0, 0, 0, 1, -1, 0, 0, 0, 1, -1, -1, -1, 1, 0, 0, 0, 0],
+    [0, 0, 1, -1, 1, 1, 0, 0, 0, 1, -1, -1, -1, 1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, -1, 0, 0, 0, 0],
+    [0, -1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 1, 0, 1, 0, 1],
+    [0, 1, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, -2, 0, -1, 1],
+    [0, -1, 1, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 0, -2, -1, 0]
   ];
+}
+
+extension GetByKeyIndex on Map {
+  elementAt(int index) => this.values.elementAt(index);
 }
