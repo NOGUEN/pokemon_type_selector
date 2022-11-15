@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: pokeAppBar("Pokemon Type Selector"),
-      body: pokeSelectorBody(),
+      body: CustomGridView(),
     );
   }
 }
@@ -53,6 +53,27 @@ AppBar pokeAppBar(String title) {
   );
 }
 
-Widget pokeSelectorBody() {
-  return Container();
+class CustomGridView extends StatefulWidget {
+  const CustomGridView({super.key});
+
+  @override
+  State<CustomGridView> createState() => _CustomGridViewState();
+}
+
+class _CustomGridViewState extends State<CustomGridView> {
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      itemCount: 18,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        childAspectRatio: 1,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+      ),
+      itemBuilder: ((context, index) {
+        return Container();
+      }),
+    );
+  }
 }
