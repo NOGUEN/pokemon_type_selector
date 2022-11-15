@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,7 +73,22 @@ class _CustomGridViewState extends State<CustomGridView> {
         crossAxisSpacing: 10,
       ),
       itemBuilder: ((context, index) {
-        return Container();
+        return Container(
+          child: IconButton(
+            onPressed: () {},
+            icon: Column(
+              children: [
+                Expanded(
+                  child: Image(
+                      image:
+                          AssetImage(Data().typeIcons.values.elementAt(index))),
+                ),
+                SizedBox(height: 5),
+                Text(Data().typeIcons.keys.elementAt(index)),
+              ],
+            ),
+          ),
+        );
       }),
     );
   }
